@@ -1,0 +1,147 @@
+ body
+ {
+    /* gap: 5px; */
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--bg-color);
+}  
+:root
+{
+    --bg-color: black
+} 
+nav {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+}
+nav div{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    font-size: 48px;
+    text-align: center;
+    color: rgb(0, 255, 0);
+    font-weight: bolder;
+    border-radius: 15px;    
+
+}
+/* .container{
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    border: 2px solid rgb(99, 94, 94);
+    border-radius: 15px;
+    gap: 15px;
+    position: relative;
+    
+    
+} */
+
+
+.me{
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    padding: 5px;
+    color: black;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 2px;
+ 
+}
+
+.rme
+{   background-color: rgb(229, 255, 0);
+    float: right;
+    clear: both;
+}
+.lme
+{   background-color: rgb(0, 153, 255);
+    float: left;
+    clear: both;
+}
+.send
+{
+   display: block;
+   margin: auto;
+   width: 600px;
+   height: 30px;
+   padding: 5px;
+ 
+}
+.send input
+{
+    border: 2px solid black;
+    width: 500px;
+    border-radius: 5px;
+}
+.send .btn{
+    border: 0px solid black;
+    width: 70px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 15px;
+    background-color: rgb(35, 197, 35); 
+}
+.jme
+{
+    width: auto;
+    height: auto;
+    background-color: rgb(2, 216, 20);
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 2px;
+}
+.dme
+{
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 2px;
+}
+
+.box {
+    position: relative;
+    height:  400px;
+    width: 600px;
+    display: block;
+    margin: auto;
+    gap: 15px;
+    background: linear-gradient(0deg, black, #444444);
+  }
+  
+  .glowing::before{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #e8f74d, #ff6600d9, #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, #ff3300de, #5aabde);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: glower 20s linear infinite;
+  }
+  
+  @keyframes glower {
+    0% {
+      background-position: 0 0;
+    }
+    
+    50% {
+      background-position: 400% 0;
+    }
+    
+    100% {
+      background-position: 0 0;
+    }
+  }
